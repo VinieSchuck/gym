@@ -1,0 +1,590 @@
+:root {
+  --vermelho: #ff0000;
+  --cinza: #252525;
+  --laranja:rgb(229, 77, 31);
+  --preto:#000;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  overflow-x:hidden;
+}
+@media (min-width: 320px) {
+  header .navbar {
+    background-color: var(--preto);
+  }
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    margin-right: 20px;
+  }
+  #logo {
+    margin: auto;
+    text-transform: uppercase;
+    color: #eee;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    background: -webkit-linear-gradient(#ff0000, rgb(229, 77, 31));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #navbar-links a {
+    margin: auto;
+    font-size: 1rem;
+  }
+  /*slider*/
+
+  #mainSlider .carousel-inner,
+  #mainSlider .carousel-item {
+    top:25px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #mainSlider .carousel-caption {
+    top:5%;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 22px;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 10px;
+  }
+
+  #mainSlider .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #000;
+  }
+
+  .main-btn {
+    background: linear-gradient(
+      90deg,
+      #ff0000 0%,
+      rgb(229, 77, 31) 100%
+    );
+    color:#eee;
+    text-transform: uppercase;
+    width: 300px;
+    height: 100px;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  .main-btn:hover {
+    text-decoration: none;
+  }
+
+  .carousel-indicators .active {
+    background-color: var(--vermelho);
+  }
+
+  /*sobre*/
+  #about-area {
+    background-color: var(--branco);
+    margin-bottom: 50px;
+  }
+  
+  .main-title {
+    background: -webkit-linear-gradient(#ff0000, rgb(229, 77, 31));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .main-text{
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #about-t{
+    font-size:25px;
+    font-weight: bold;
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 18px;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #about-text{
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  #about-list {
+    margin:auto;
+    list-style: none;
+    padding-left: 0;
+    
+  }
+  
+  #about-list li {
+    margin-bottom: 20px;
+    font-size:15px;
+    line-height: 30px;
+  }
+  
+  #about-list i {
+    color: var(--laranja);
+    margin-right: 15px;
+  }
+
+  /*planos*/
+
+  #planos-area{
+    padding:20px 0px;
+    background-color: var(--cinza);
+  }
+  .planos{
+    width: 50%;
+    height:400px;
+    margin: auto;
+    margin-bottom: 50px;
+    border:none;
+    border-radius: 0px;
+    -webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+    -moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+    box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+  }
+  .planos-title{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+    color: #eee;
+  }
+  .planos-text{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #eee;
+  }
+
+  .planos button{
+    width: 100%;
+    margin-top:190px;
+    background: linear-gradient(
+      90deg,
+      #ff0000 0%,
+      rgb(229, 77, 31) )100%;
+      border:none;
+    color: #eee;
+    
+  }
+ #planoa{
+    background: url(images/card1.jpg) no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+ #planob{
+    background: url(images/card2.jpg) no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+ #planoc{
+    background: url(images/card3.jpg) no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+ 
+ /*unidades*/
+
+ #unidades{
+    margin-bottom:50px;
+ }
+
+ .card{
+    margin:auto;
+    margin-bottom: 30px;
+    border: none;
+    width: 70%;
+    -webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+   -moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+    box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+ }
+ .card-title{
+    font-size: 22px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: var(--cinza);
+ }
+ .card-body i{
+    margin-right:5px;
+ }
+
+ /*footer*/
+
+
+
+ .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--cinza);
+  }
+  
+  .contact-box i {
+    font-size: 18px;
+    margin-right:5px;
+  }
+  
+  .contact-box a {
+    font-size: 12px;
+    padding:10px;
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  .contact-box a:hover {
+    color: var(--vermelho);
+  }
+ 
+  #copy{
+    letter-spacing: 1px;
+    padding-top:20px;
+    background-color: var(--cinza);
+  }
+
+  #copy p{
+    color: #eee;
+    text-align: center;
+    font-size:12px;
+  }
+  #copy a{
+    color: var(--laranja);
+    text-decoration: none;
+    margin-right:1px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #logo {
+        margin-left: 15%;
+    }
+      
+      .navbar-nav {
+        margin-right: 15%;
+      }
+      #navbar-links a:hover {
+        color:var(--laranja) ;
+      }
+      /*slider*/
+    
+      #mainSlider .carousel-inner,
+      #mainSlider .carousel-item {
+        top:25px;
+        height: auto;
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    
+      #mainSlider .carousel-caption {
+        top:15%;
+      }
+    
+      #mainSlider .carousel-caption h2 {
+        font-size: 24px;
+      }
+    
+      #mainSlider .carousel-caption p {
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #000;
+      }
+    
+      .main-btn {
+        background: linear-gradient(
+          90deg,
+          #ff0000 0%,
+          rgb(229, 77, 31) 100%
+        );
+        color:#eee;
+        text-transform: uppercase;
+        width: 300px;
+        height: 100px;
+        padding: 10px 30px;
+        text-decoration: none;
+        transition: 0.5s;
+      }
+    
+      .main-btn:hover {
+        text-decoration: none;
+      }
+    
+      .carousel-indicators .active {
+        background-color: var(--vermelho);
+      }
+    
+      /*sobre*/
+      #about-area {
+        background-color: var(--branco);
+        margin-bottom: 50px;
+      }
+      
+      .main-title {
+        background: -webkit-linear-gradient(#ff0000, rgb(229, 77, 31));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: auto;
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .main-text{
+        font-family: "Oswald", sans-serif;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      #about-t{
+        font-size:25px;
+        font-weight: bold;
+      }
+      
+      .about-title {
+        text-align: center;
+        font-size: 18px;
+        color: #2e2e2e;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      #about-text{
+        text-align: center;
+        font-size: 18px;
+      }
+      
+      #about-list {
+        margin:auto;
+        list-style: none;
+        padding-left: 0;
+        
+      }
+      
+      #about-list li {
+        margin-bottom: 20px;
+        font-size:15px;
+        line-height: 30px;
+      }
+      
+      #about-list i {
+        color: var(--laranja);
+        margin-right: 15px;
+      }
+    
+      /*planos*/
+    
+      #planos-area{
+        padding:20px 0px;
+        background-color: var(--cinza);
+      }
+      .planos{
+        width: 80%;
+        height:400px;
+        margin: auto;
+        margin-bottom: 50px;
+        border:none;
+        border-radius: 0px;
+        -webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+        -moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+        box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+      }
+      .planos-title{
+        text-align: center;
+        font-size: 22px;
+        padding-top: 20px;
+        color: #eee;
+      }
+      .planos-text{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
+        color: #eee;
+      }
+    
+      .planos button{
+        width: 100%;
+        margin-top:190px;
+        background: linear-gradient(
+          90deg,
+          #ff0000 0%,
+          rgb(229, 77, 31) )100%;
+          border:none;
+        color: #eee;
+        
+      }
+     #planoa{
+        background: url(images/card1.jpg) no-repeat center center ; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+     }
+     #planob{
+        background: url(images/card2.jpg) no-repeat center center ; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+     }
+     #planoc{
+        background: url(images/card3.jpg) no-repeat center center ; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+     }
+     
+     /*unidades*/
+    
+     #unidades{
+        margin-bottom:50px;
+     }
+    
+     .card{
+        margin:auto;
+        margin-bottom: 30px;
+        border: none;
+        width: 70%;
+        -webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+       -moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+        box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.31);
+     }
+     .card-title{
+        font-size: 22px;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        color: var(--cinza);
+     }
+     .card-body i{
+        margin-right:5px;
+     }
+    
+     /*footer*/
+    
+     #contact-area{
+        background-color: var(--cinza);
+     }
+     .contact-box {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      
+      .contact-box i {
+        font-size: 18px;
+        margin-right:5px;
+      }
+      
+      .contact-box a {
+        font-size: 12px;
+        padding:10px;
+        color: #eee;
+        text-decoration: none;
+      }
+      
+      .contact-box a:hover {
+        color: var(--vermelho);
+      }
+     
+      #copy{
+        letter-spacing: 1px;
+        padding-top:20px;
+      }
+    
+      #copy p{
+        color: #eee;
+        text-align: center;
+        font-size:12px;
+      }
+      #copy a{
+        color: var(--laranja);
+        text-decoration: none;
+        margin-right:1px;
+      }
+    }
+
+    @media (min-width: 1281px) {
+        #logo{
+            margin-left: 15%;
+        }
+        #mainSlider .carousel-inner,
+        #mainSlider .carousel-item {
+          top:25px;
+          height: 90vh;
+          width: 100%;
+          margin-bottom: 50px;
+        }
+        #mainSlider .carousel-caption {
+            top:25%;
+          }
+       
+        #navbar-links{
+            margin-right:15%;
+        }
+        .navbar-nav a:hover{
+            color: var(--laranja);
+        }
+        #contact-area{
+            background-color: var(--cinza);
+         }
+         .contact-box {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+          }
+          
+          .contact-box i {
+            font-size: 18px;
+            margin-right:5px;
+          }
+          
+          .contact-box a {
+            font-size: 12px;
+            padding:10px;
+            color: #eee;
+            text-decoration: none;
+          }
+          
+          .contact-box a:hover {
+            color: var(--vermelho);
+          }
+         
+          #copy{
+            letter-spacing: 1px;
+            padding-top:20px;
+          }
+        
+          #copy p{
+            color: #eee;
+            text-align: center;
+            font-size:12px;
+          }
+          #copy a{
+            color: var(--laranja);
+            text-decoration: none;
+            margin-right:1px;
+          }
+      }
+
